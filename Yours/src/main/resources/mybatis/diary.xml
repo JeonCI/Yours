@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="diary">
+	
+	<resultMap type="Diary" id="DiaryMap">
+		<id column="code" property="code"/>
+		<result column="id" property="id"/>
+		<result column="reg_date" property="regDate"/>
+		<result column="content" property="content"/>
+		<result column="share" property="share"/>
+		<result column="category" property="category"/>
+		
+		<collection property="feels" column="diary_code" ofType="DailyFeelings" javaType="ArrayList">
+			<id column="daily_code" property="code"/>
+			<result column="diary_code" property="diaryCode"/>
+			<result column="feeling_code" property="feelingCode"/>
+			<result column="feeling" property="feeling"/>
+		</collection>
+	</resultMap>
+	
+	<select id="dummyList" resultType="Diary">
+		SELECT *
+		FROM diary
+		WHERE share = 1
+		ORDER BY reg_date DESC
+		LIMIT #{offset}, #{perPage}
+	</select>
+	
+	<select id="item" resultMap="DiaryMap">
+		SELECT d.*,
+		df.code daily_code,
+		df.diary_code diary_code,
+		df.feeling_code feeling_code,
+		f.feeling feeling
+		FROM diary d
+		LEFT OUTER
+		JOIN daily_feelings df
+		ON d.code = df.diary_code
+		LEFT OUTER
+		JOIN feelings f
+		ON df.feeling_code = f.code
+		WHERE d.code = #{code}
+	</select>
+	
+	<select id="list" resultType="Diary">
+		SELECT *
+		FROM diary
+		WHERE id = #{id}
+		ORDER BY reg_date DESC
+		LIMIT #{offset}, #{perPage}
+	</select>
+	
+	<select id="total" resultType="Integer">
+		SELECT COUNT(*)
+		FROM diary
+	</select>
+	
+	<insert id="add">
+		INSERT INTO diary
+		VALUES (NULL, #{id}, NOW(), #{content}, #{share}, #{category})
+		
+		<selectKey keyProperty="code" resultType="Integer" order="AFTER" >
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+	</insert>
+	
+	<update id="update">
+		UPDATE diary
+		SET id = #{id}, content = #{content}, share = #{share}, category = #{category}
+		WHERE code = #{code}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM diary
+		WHERE code = #{code}
+	</delete>
+	
+	<delete id="deleteEmpathy">
+		DELETE FROM empathy
+		WHERE id = #{id} AND diary_code = #{code}
+	</delete>
+	
+	<insert id="addEmpathy">
+		INSERT INTO empathy
+		VALUES (NULL, #{code}, #{id})
+	</insert>
+	
+	<select id="itemEmpathy" resultType="Empathy">
+		SELECT * FROM empathy
+		WHERE id = #{id} AND diary_code = #{diaryCode}
+	</select>
+	
+	<select id="category1" resultType="Integer">
+		SELECT count(category) FROM diary
+		WHERE category = '기쁨' AND id = #{id}
+	</select>
+	
+	<select id="category2" resultType="Integer">
+		SELECT count(category) FROM diary
+		WHERE category = '행복' AND id = #{id}
+	</select>
+	
+	<select id="category3" resultType="Integer">
+		SELECT count(category) FROM diary
+		WHERE category = '슬픔' AND id = #{id}
+	</select>
+	
+	<select id="category4" resultType="Integer">
+		SELECT count(category) FROM diary
+		WHERE category = '우울' AND id = #{id}
+	</select>
+	
+	<select id="category5" resultType="Integer">
+		SELECT count(category) FROM diary
+		WHERE category = '화남' AND id = #{id}
+	</select>
+	
+</mapper>
+

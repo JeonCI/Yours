@@ -1,0 +1,125 @@
+#header {
+    display: inline-block;
+    height: 600px;
+    width: 1024px;
+    text-align: center;
+}
+
+#head_line {
+    margin-top: 26px;
+    height: 54px;
+    display: flex;
+}
+
+#navigation {
+    font-size: 28px;
+    width: 513px;
+    display: flex;
+}
+
+#navigation ul {
+    margin-top: 23.8px;
+}
+
+#navigation ul li {
+    margin: auto 0;
+    width: 160px;
+    display: inline-block;
+}
+
+#navigation ul li a {
+    font-family: 'Nanum Pen Script';
+    color: black;
+}
+
+#logo {
+    width: 170px;
+}
+
+#hd_space {
+    width: 341px;
+}
+
+#header_image {
+    margin-top: 83px;
+}
+
+section {
+    padding-top: 45px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+section div {
+    display: inline-block;
+}
+
+#main {
+    width: 1024px;
+}
+
+#p1 {
+    font-family: 'Nanum Gothic';
+    font-size: 16px;
+}
+
+#p2 {
+    font-family: 'Nanum Gothic';
+    line-height: 61px;
+    font-size: 32px;
+}
+
+#p2 u {
+    text-decoration: underline #333333;
+    text-underline-position: under;
+}
+
+#p3 {
+    font-family: 'Nanum Gothic';
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+section hr {
+    color: #9a9a9a;
+    width: 70px;
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+#p4 {
+    font-family: 'Nanum Gothic';
+    font-size: 32px;
+    line-height: 52px;
+}
+
+#content {
+    margin-top: 50px;
+}
+
+.content_box {
+    width: 504px;
+}
+
+.content_phead {
+    margin-top: 32px;
+    font-family: 'Nanum Gothic';
+    font-size: 24px;
+    line-height: 42px;
+}
+
+.content_p {
+    margin-top: 10px;
+    font-family: 'Nanum Gothic';
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+.div_line {
+    margin-bottom: 95px;
+    width: 1px;
+    height: 250px;
+    border-right: 1px solid #9a9a9a;
+}

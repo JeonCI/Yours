@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="feelings">
+	
+	<insert id="addFeeling">
+		INSERT INTO feelings
+		VALUES (NULL, #{id}, #{feeling})
+		
+		<selectKey keyProperty="feelingCode" resultType="Integer" order="AFTER" >
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+	</insert>
+	
+	<insert id="addDailyFeelings">
+		INSERT INTO daily_feelings
+		VALUES (NULL, #{diaryCode}, #{feelingCode})
+	</insert>
+	
+	<delete id="deleteDailyFeelings">
+		DELETE FROM daily_feelings
+		WHERE diary_code = #{diaryCode}
+	</delete>
+	
+	<select id="checkFeeling" resultType="DailyFeelings">
+		SELECT * FROM feelings
+		WHERE id like #{id} AND feeling like #{feeling}
+	</select>
+	
+</mapper>
+

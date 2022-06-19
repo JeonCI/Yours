@@ -1,0 +1,265 @@
+#header {
+    display: inline-block;
+    height: 80px;
+    width: 1024px;
+    text-align: center;
+}
+
+#head_line {
+    margin-top: 26px;
+    height: 54px;
+    display: flex;
+}
+
+#navigation {
+    font-size: 28px;
+    width: 513px;
+    display: flex;
+}
+
+#navigation ul {
+    margin-top: 23.8px;
+}
+
+#navigation ul li {
+    margin: auto 0;
+    width: 160px;
+    display: inline-block;
+}
+
+#navigation ul li a {
+    font-family: 'Nanum Pen Script';
+    color: black;
+}
+
+#hd_space {
+    width: 341px;
+}
+
+#logo {
+    width: 170px;
+}
+
+#content_top {
+    display: inline-block;
+    width: 1024px;
+    height: 120px;
+}
+
+#content_top div{
+    display: inline-block;
+}
+
+section {
+    display: inline-block;
+    width: 1024px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#content_top {
+    font-family: 'Nanum Gothic';
+}
+
+#top_div1 {
+    border-radius: 15px 0px 0px 15px;
+    border: gray solid 1px;
+    height: 118px;
+    width: 220px;
+    float: left;
+}
+
+#top_div1 ul li{
+    margin-left: 60px;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+#top_div1 ul li a {
+    color: black;
+    font-weight: 700;
+}
+
+#top_div2 {
+    border-radius: 0px 15px 15px 0px;
+    border: gray solid 1px;
+    height: 118px;
+    width: 800px;
+    float: right;
+}
+
+#top_div2 p:first-child {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+#feeling_p {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#diary_p {
+    font-family: 'Nanum Gothic';
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#content_area {
+    border: solid 1px lightslategray;
+    border-radius: 15px;
+    display: inline-block;
+    width: 640px;
+    margin-top: 50px;
+    font-family: 'Nanum Gothic';
+}
+
+.content {
+    text-align: left;
+}
+
+.content * {
+    display: inline-block;
+}
+
+.first_line {
+    text-align: center;
+    height: 50px;
+    border-bottom: 1px solid lightslategray;
+    background-color: #f9f1e9;
+    border-radius: 14px 14px 0 0;
+}
+
+#first_label {
+    padding-top: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 96px;
+    height: 37px;
+    background-color: lightgray;
+    border-right: lightslategray 1px solid;
+    border-radius: 13px 0 0 0;
+}
+
+#seccond_label {
+    border-right: lightslategray solid 1px;
+    border-left: lightslategray solid 1px;
+    padding-top: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 96px;
+    height: 37px;
+    background-color: lightgray;
+}
+
+.first_line p {
+    margin-top: 17px;
+    font-size: 16px;
+    width: 230px;
+}
+
+.first_line input {
+    margin-top: 13px;
+    width: 197px;
+    border: none;
+    text-align: center;
+    background: none;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.second_line {
+    text-align: center;
+    height: 50px;
+    background-color: #f9f1e9;
+    border-bottom: 1px solid lightslategray;
+}
+
+.second_line label {
+    border-right: solid 1px lightslategray;
+    width: 192px;
+    padding-top: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: lightgray;
+    height: 37px;
+}
+
+.second_line input {
+    margin-top: 13px;
+    width: 438px;
+    border: none;
+    text-align: center;
+    background: none;
+    font-size: 16px;
+}
+
+#today {
+    height: 320px;
+    text-align: left;
+    border-radius: 0 0 14px 14px;
+    background-color: #f9f1e9;
+}
+
+#today_label {
+    display: inline-block;
+    text-align: center;
+    border-radius: 0 0 13px 0;
+    width: 240px;
+    padding-top: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    border-right: lightslategray solid 1px;
+    border-bottom: lightslategray solid 1px;
+    background-color: lightgray;
+    height: 37px;
+}
+
+#share_label {
+    display: inline-block;
+    text-align: center;
+    border-radius: 0 0 0 13px;
+    width: 96px;
+    padding-top: 13px;
+    font-size: 24px;
+    font-weight: 600;
+    border-left: lightslategray solid 1px;
+    border-bottom: lightslategray solid 1px;
+    background-color: lightgray;
+    height: 37px;
+    float: right;
+}
+
+#today p {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#btn_box {
+    font-family: 'Nanum Gothic';
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn_text a {
+    color: black;
+}
+
+.btn_text {
+    display: inline-block;
+    border-radius: 5px;
+    width: 84px;
+    height: 24px;
+    padding-top: 8px;
+    background-color: rgba(185, 145, 223, 0.5);
+}

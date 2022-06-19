@@ -1,0 +1,210 @@
+#header {
+    display: inline-block;
+    height: 80px;
+    width: 1024px;
+    text-align: center;
+}
+
+#head_line {
+    margin-top: 26px;
+    height: 54px;
+    display: flex;
+}
+
+#navigation {
+    font-size: 28px;
+    width: 513px;
+    display: flex;
+}
+
+#navigation ul {
+    margin-top: 23.8px;
+}
+
+#navigation ul li {
+    margin: auto 0;
+    width: 160px;
+    display: inline-block;
+}
+
+#navigation ul li a {
+    font-family: 'Nanum Pen Script';
+    color: black;
+}
+
+#hd_space {
+    width: 341px;
+}
+
+#logo {
+    width: 170px;
+}
+
+#content_top {
+    display: inline-block;
+    width: 1024px;
+    height: 120px;
+}
+
+#content_top div{
+    display: inline-block;
+}
+
+section {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#content_top {
+    font-family: 'Nanum Gothic';
+}
+
+#top_div1 {
+    border-radius: 15px 0px 0px 15px;
+    border: gray solid 1px;
+    height: 118px;
+    width: 220px;
+    float: left;
+}
+
+#top_div1 ul li{
+    margin-left: 60px;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+#top_div1 ul li a {
+    color: black;
+    font-weight: 700;
+}
+
+#top_div2 {
+    border-radius: 0px 15px 15px 0px;
+    border: gray solid 1px;
+    height: 118px;
+    width: 800px;
+    float: right;
+}
+
+#top_div2 p:first-child {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+#feeling_p {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#diary_p {
+    font-family: 'Nanum Gothic';
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#table_box {
+    width: 1024px;
+    display: inline-block;
+    text-align: center;
+}
+
+table {
+    font-family: 'Nanum Gothic';
+    margin-top: 70px;
+    display: inline-block;
+    width: 1024px;
+    height: 353px;
+}
+
+td, tr {
+    border-radius: 30px;
+    border: lightslategray solid 1px;
+}
+
+th {
+    background-color: #f9f1e9;
+    font-size: 22px;
+    padding-top: 14px;
+    font-weight: 700;
+}
+
+table tr {
+    height: 50px;
+}
+
+#pager_box div{
+    display: inline-block;
+}
+
+#th1 {
+    width: 724px;
+}
+
+#th2 {
+    width: 150px;
+}
+
+#th3 {
+    width: 150px;
+}
+
+td {
+	padding: 5px 0;
+	vertical-align: middle;
+    font-size: 16px;
+}
+
+.content_td {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.content_td a {
+    color: black;
+}
+
+#pager_td {
+    padding-top: 4px;
+}
+
+.pager_btn {
+    font-family: 'Nanum Gothic';
+    font-size: 14px;
+    font-weight: 700;
+    margin: 4px;
+}
+
+.pager_btn a {
+    color: black;
+}
+
+.btn_text {
+    border-radius: 5px;
+    margin: 4px 2px 4px 2px;
+    width: 46px;
+    height: 24px;
+    padding-top: 8px;
+    background-color: rgba(145, 172, 223, 0.4);
+}
+
+.btn_num {
+    border-radius: 5px;
+    width: 32px;
+    height: 24px;
+    padding-top: 8px;
+    background-color: rgba(145, 172, 223, 0.4);
+    margin: 4px 1px;
+}
+
+.btn_active {
+    background-color: rgba(145, 172, 223, 1);
+}
+
+#page_div {
+	margin-left: 20px;
+	margin-right: 20px;
+}

@@ -1,0 +1,79 @@
+#header {
+    padding-top: 60px;
+    height: 120px;
+    display: inline-block;
+    width: 1024px;
+    text-align: center;
+}
+
+section {
+    height: 568px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#signupForm {
+    border-radius: 30px;
+    font-family: 'Nanum Gothic';
+    display: inline-block;
+    padding: 30px 0px 30px 10px;
+    width: 540px;
+    background: rgba(100, 100, 100, 0.4) ;
+    text-align: center;
+}
+
+#signupForm * {
+    font-family: 'Nanum Gothic';
+    display: inline-block;
+}
+
+#passwd_worn {
+    font-size: 12px;
+    color: rgba(100, 100, 100, 1) ;
+}
+
+input {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    width: 480px;
+    height: 46px;
+    margin-bottom: 1px;
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+#id {
+    width: 366px;
+}
+
+#checkId {
+    font-size: 16px;
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+}
+
+.text_div {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+#signupBtn {
+    border-radius: 26px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 180px;
+    height: 52px;
+}
+
+#wrn_text {
+    margin-bottom: 15px;
+    font-family: 'Nanum Gothic';
+}

@@ -1,0 +1,169 @@
+#header {
+    display: inline-block;
+    height: 80px;
+    width: 1024px;
+    text-align: center;
+}
+
+#head_line {
+    margin-top: 26px;
+    height: 54px;
+    display: flex;
+}
+
+#navigation {
+    font-size: 28px;
+    width: 513px;
+    display: flex;
+}
+
+#navigation ul {
+    margin-top: 23.8px;
+}
+
+#navigation ul li {
+    margin: auto 0;
+    width: 160px;
+    display: inline-block;
+}
+
+#navigation ul li a {
+    font-family: 'Nanum Pen Script';
+    color: black;
+}
+
+#hd_space {
+    width: 341px;
+}
+
+#logo {
+    width: 170px;
+}
+
+section {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#diary_p {
+    font-family: 'Nanum Gothic';
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#table_box {
+    width: 1024px;
+    display: inline-block;
+    text-align: center;
+}
+
+table {
+    font-family: 'Nanum Gothic';
+    margin-top: 40px;
+    display: inline-block;
+    width: 1024px;
+}
+
+td {
+    border: lightslategray solid 1px;
+}
+
+th {
+    border-top: lightslategray solid 1px;
+    border-left: lightslategray solid 1px;
+    border-right: lightslategray solid 1px;
+}
+
+th {
+    height: 40px;
+    vertical-align: middle;
+    background-color: #f9f1e9;
+    font-size: 22px;
+    padding-top: 8px;
+    font-weight: 700;
+}
+
+table tr,td {
+    padding: 5px 5px 5px 5px;
+}
+
+#pager_box div{
+    display: inline-block;
+}
+
+#th1 {
+    width: 624px;
+}
+
+#th2 {
+    width: 250px;
+}
+
+#th3 {
+    width: 150px;
+}
+
+td {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.content_td {
+    text-align: left;
+}
+
+.feelings_td {
+    padding-top: inherit;
+}
+
+.content_td a {
+    color: black;
+}
+
+#pager_td {
+    padding-top: 4px;
+}
+
+.pager_btn {
+    font-family: 'Nanum Gothic';
+    font-size: 14px;
+    font-weight: 700;
+    margin: 4px;
+}
+
+.pager_btn a {
+    color: black;
+}
+
+.btn_text {
+    border-radius: 5px;
+    margin: 4px 2px 4px 2px;
+    width: 58px;
+    height: 24px;
+    padding-top: 8px;
+    background-color: rgba(145, 172, 223, 0.4);
+}
+
+.btn_num {
+    border-radius: 5px;
+    width: 32px;
+    height: 24px;
+    padding-top: 8px;
+    background-color: rgba(145, 172, 223, 0.4);
+    margin: 4px 1px;
+}
+
+.btn_active {
+    background-color: rgba(145, 172, 223, 1);
+}
+
+#page_div {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.red {
+    color: red;
+}

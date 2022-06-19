@@ -1,0 +1,70 @@
+#header {
+    padding-top: 60px;
+    height: 120px;
+    display: inline-block;
+    width: 1024px;
+    text-align: center;
+}
+
+section {
+    height: 488px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#form_box {
+    border-radius: 30px;
+    font-family: 'Nanum Gothic';
+    display: inline-block;
+    padding: 30px 0px 30px 0px;
+    width: 540px;
+    background: rgba(100, 100, 100, 0.4) ;
+    text-align: center;
+}
+
+input {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    width: 480px;
+    height: 46px;
+    margin-bottom: 1px;
+    align-items: center;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#accountBtn {
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 140px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+#idFindBtn {
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100px;
+    height: 42px;
+}
+
+#passwdForm {
+    margin-top: 20px;
+}
+
+#passwdFindBtn {
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 120px;
+    height: 42px;
+}
